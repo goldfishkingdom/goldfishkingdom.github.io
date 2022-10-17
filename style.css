@@ -1,0 +1,137 @@
+@font-face {
+ font-family: Whypo;
+ src: url("../assets/fonts/Whypo.ttf")
+}
+* {
+ font-family: "Whypo";
+ margin: 0;
+ overflow-x: hidden;
+ box-sizing: border-box;
+}
+#MainContent {
+ background: linear-gradient(to bottom, #FFCF00, #FFAF00);
+}
+#TODOPutLogoHereInsteadOfText {
+ text-align: center;
+ color: #5D00FF;
+ text-decoration: none;
+}
+#BittyBitSpace1 {
+ width: 0px;
+ height: 10px;
+}
+#BittyBitSpace2 {
+ width: 0px;
+ height: 10px;
+}
+#BittyBitSpace3 {
+ width: 0px;
+ height: 10px;
+}
+#BittyBitSpace4 {
+ width: 10px;
+ height: px;
+}
+#MainContentFader {
+ width: 2000px;
+ height: 25px;
+ background: linear-gradient(to bottom, #FFAF00, rgba(0, 0, 0, 0));
+}
+.Logo {
+ transition: transform 0.25s;
+}
+.Logo:hover {
+ transform: scale(1.01);
+}
+.Row {
+ display: -ms-flexbox;
+ display: flex;
+ -ms-flex-wrap: wrap;
+ flex-wrap: wrap;
+}
+.Side {
+ -ms-flex: 30%;
+ flex: 30%;
+ background-color: #F1F1F1;
+ padding: 20px;
+ border-radius: 10px;
+}
+.Main {
+ -ms-flex: 70%;
+ flex: 70%;
+ background-color: white;
+ padding: 20px;
+ border-radius: 10px;
+}
+.ContentButton {
+ background: yellow;
+ border-color: #CCCC00;
+ border-radius: 5px;
+}
+.ContentButton:hover {
+ background: #CCCC00;
+ border-color: #999900;
+}
+p {
+ font-family: "Valken";
+}
+p i {
+ font-family: "Valken";
+}
+p b {
+ font-family: "Valken";
+}
+p b a {
+ font-family: "Valken";
+}
+.CharacterButton {
+ border-radius: 10px;
+ width: 100px;
+ height: 50px;
+ font-size: 30px;
+}
+#FinnButton {
+ background: #FFDD00;
+ border-color: #D9BC00;
+}
+#GillButton {
+ background: #FFEA2E;
+ border-color: #D4C226;
+}
+#MomButton {
+ background: #FFFA75;
+ border-color: #C9C65C;
+}
+#DadButton {
+ background: #FFAA00;
+ border-color: #C28100;
+}
+#BrookeButton {
+ background: #FFF9A3;
+ border-color: #C9C581;
+}
+#XTremeButton {
+ background: #FF8800;
+ border-color: #C46900;
+}
+#GilbertButton {
+ background: #854700;
+ border-color: #5E3200;
+}
+#CoralButton {
+ background: #4F2500;
+ border-color: #331800;
+}
+#PegasusButton {
+ background: #0080FF;
+ border-color: #0061C2;
+}
+.Footer {
+ text-align: center;
+ color: #5D00FF;
+ position: absolute;
+ top: 95%;
+ left: 50%;
+ margin: 0;
+ transform: translate(-50%, -50%);
+}
