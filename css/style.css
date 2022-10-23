@@ -73,16 +73,16 @@
  border-color: #999900;
 }
 p {
- font-family: "Valken";
+ font-family: -apple-system, BlinkMacSystemFont, "Valken", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 p i {
- font-family: "Valken";
+ font-family: -apple-system, BlinkMacSystemFont, "Valken", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 p b {
- font-family: "Valken";
+ font-family: -apple-system, BlinkMacSystemFont, "Valken", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 p b a {
- font-family: "Valken";
+ font-family: -apple-system, BlinkMacSystemFont, "Valken", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 .CharacterButton {
  border-radius: 10px;
