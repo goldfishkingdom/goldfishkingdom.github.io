@@ -76,6 +76,8 @@
      <p>Like <b><a href="#Home" onclick="home()" title="Home">Home</a></b> says, <b>Goldfish Kingdom</b> is an <b><i>upcoming</i></b> series about all kinds of goldfish, meaning the series has not been exactly <b><i>released</i></b> yet. But you've still gotten early access to <b><i>knowing it while you wait.</i></b><br><br><b>NOTE: "Goldfish Kingdom"</b> is a parody of the goldfish they show<i>(ed)</i> in those TV commercials back in the day, so please don't rant on it, OK?</p>
     </div>
    </div>
+   <button style="background: #1C1C1C; width: 50px; height: 50px; border-radius: 10%; font-size: 25px; position: absolute; top: 80%; left: 50%; transform: translate(-50%, 0%); cursor: pointer;" title="Dark Theme" onclick="darkTheme()" id="DarkTheme">🌙</button>
+   <button style="background: #E3E3E3; width: 50px; height: 50px; border-radius: 10%; font-size: 25px; position: absolute; top: 80%; left: 50%; transform: translate(-50%, 0%); cursor: pointer;" title="Light Theme" onclick="lightTheme()" id="LightTheme">☀️</button>
    <div class="Footer">
     <h2><a title="OftenGuy" href="https://oftenguy.github.io" style="text-decoration: none;">&copy; OftenGuy &copy;</a></h2>
    </div>
@@ -95,6 +97,8 @@
    document.getElementById("GilbertContent").style.display = "none";
    document.getElementById("CoralContent").style.display = "none";
    document.getElementById("PegasusContent").style.display = "none";
+   document.getElementById("DarkTheme").style.display = "block";
+   document.getElementById("LightTheme").style.display = "none";
    function home() {
     document.getElementById("HomeButton").style.background = "#B3B300";
     document.getElementById("HomeButton").style.borderColor = "#808000";
@@ -226,6 +230,24 @@
     document.getElementById("GilbertContent").style.display = "none";
     document.getElementById("CoralContent").style.display = "none";
     document.getElementById("PegasusContent").style.display = "block";
+   }
+   function darkTheme() {
+    document.getElementById("DarkTheme").style.display = "none";
+    document.getElementById("LightTheme").style.display = "block";
+    document.body.style.backgroundImage = "url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7dc13908-c780-4f6e-8a01-36a44fc34b03/dfg1e0t-29641225-f784-4150-bb78-c2b4c5ba66e6.jpg/v1/fill/w_1198,h_667,q_70,strp/goldfish_kingdom___backgrounds___outside__night__by_oftenartist_dfg1e0t-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzEzIiwicGF0aCI6IlwvZlwvN2RjMTM5MDgtYzc4MC00ZjZlLThhMDEtMzZhNDRmYzM0YjAzXC9kZmcxZTB0LTI5NjQxMjI1LWY3ODQtNDE1MC1iYjc4LWMyYjRjNWJhNjZlNi5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hZUcZxr-ZTepcZrmAY2EJNKAkS1QpeL4mNjSC_32niU')";
+    document.getElementsByClassName("Side")[0].style.backgroundColor = "#333333";
+    document.getElementsByClassName("Side")[0].style.color = "#FFFFFF";
+    document.getElementsByClassName("Main")[0].style.backgroundColor = "#000000";
+    document.getElementsByClassName("Main")[0].style.color = "#FFFFFF";
+   }
+   function lightTheme() {
+    document.getElementById("DarkTheme").style.display = "block";
+    document.getElementById("LightTheme").style.display = "none";
+    document.body.style.backgroundImage = "url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7dc13908-c780-4f6e-8a01-36a44fc34b03/dfe8qjj-6acd84c4-731b-4e2e-9e22-71e60598a7aa.jpg/v1/fill/w_1192,h_670,q_70,strp/goldfish_kingdom___backgrounds___outside_by_oftenartist_dfe8qjj-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvN2RjMTM5MDgtYzc4MC00ZjZlLThhMDEtMzZhNDRmYzM0YjAzXC9kZmU4cWpqLTZhY2Q4NGM0LTczMWItNGUyZS05ZTIyLTcxZTYwNTk4YTdhYS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.irDCnqZFMlBBX7Wv3SwWbIzlSDaX_YKPqLWQm0aongs')";
+    document.getElementsByClassName("Side")[0].style.backgroundColor = "#F1F1F1";
+    document.getElementsByClassName("Side")[0].style.color = "#000000";
+    document.getElementsByClassName("Main")[0].style.backgroundColor = "#FFFFFF";
+    document.getElementsByClassName("Main")[0].style.color = "#000000";
    }
   </script>
  </body>
